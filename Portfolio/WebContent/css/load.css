@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #fff;
+  font-family: 'DKC', bold;
+  font-size: 100%;
+  font-weight: 300;
+  color: #000;
+}
+
+@font-face {
+  font-family: 'Pangolin';
+  src: url('../fonts/Pangolin-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DKC';
+  src: url('../fonts/DKC.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* loading */
+
+/* captain america */
+
+#loading {
+  background-color: #FAFAFA;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  margin-top: 0px;
+  top: 0px;
+}
+
+#loading-center {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 200px;
+  width: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  -ms-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.object {
+  -moz-border-radius: 50% 50% 50% 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
+  position: absolute;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  -webkit-animation: animate 2s infinite;
+  animation: animate 2s infinite;
+}
+
+#object_zero {
+  left: 85px;
+  top: 85px;
+  bottom: 85px;
+  right: 85px;
+  width: 60px;
+  height: 60px;
+  background: url('../images/star-6-xxl.png') no-repeat;
+  background-size: contain;
+}
+
+#object_one {
+  background-color: #bd4932;
+  left: 70px;
+  top: 70px;
+  bottom: 65px;
+  right: 65px;
+  width: 90px;
+  height: 90px;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+#object_two {
+  background-color: #FFFFFF;
+  left: 55px;
+  top: 55px;
+  bottom: 45px;
+  right: 45px;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+#object_three {
+  background-color: #bd4932;
+  left: 40px;
+  top: 40px;
+  bottom: 25px;
+  right: 25px;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes animate {
+  50% {
+    -ms-transform: rotate(360deg) scale(0.8);
+    -webkit-transform: rotate(360deg) scale(0.8);
+    transform: rotate(360deg) scale(0.9);
+  }
+}
+
+@keyframes animate {
+  50% {
+    -ms-transform: rotate(360deg) scale(0.8);
+    -webkit-transform: rotate(360deg) scale(0.8);
+    transform: rotate(360deg) scale(0.9);
+  }
+}
+
+/* captain america */
+
+/* batman */
+
+@keyframes spinner {
+  100% {
+    transform: rotate(3600deg);
+  }
+}
+
+#preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #fff;
+}
+
+.full {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.loading-container {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+  background-color: #fff;
+}
+
+.spinner {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background: url('../images/bat.jpg') center center;
+  background-size: contain;
+  transition-origin: 50% 50%;
+  animation: spinner 3s infinite;
+}
+
+.spinner-center {
+  display: inline-block;
+  position: absolute;
+  margin-left: -200px;
+  width: 200px;
+  height: 200px;
+  background: url('../images/spin.png') center center;
+  background-size: contain;
+  content: '';
+}
+
+.center {
+  width: 625px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+  background-size: contain;
+  box-sizing: content-box;
+  background-color: #fff
+}
+
+.loading-text {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 1px;
+  font-size: 20px;
+  margin-left: 25px;
+  font-family: "DKC" bold;
+  background-color: #fff
+}
+
+/* batman */

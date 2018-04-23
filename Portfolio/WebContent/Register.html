@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
+
+    <title>Signin Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="http://v4-alpha.getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+<style media="screen">
+  .top{
+    margin:auto;
+margin-top:100px;
+width:300px;
+height:auto;
+  }
+</style>
+
+  </head>
+
+  <body>
+
+    <div class="container top">
+
+        <h2>Please sign up</h2>
+        <label for="userName" class="sr-only">Email address</label>
+        <input type="text" id="userName" placeholder="UserName" autofocus="autofocus">
+        <br>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="text" id="inputEmail" placeholder="Email address">
+        <br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" placeholder="Password">
+        <label for="inputPassword" class="sr-only">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Show Password
+          </label>
+        </div>
+        <button class="btn" onclick="chkUserName()">Sign Up</button>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript">
+
+var RGMAIL = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var RGPASS =  /^[A-Za-z]\w{7,14}$/ ;
+var RGLETT = /^[A-Za-z]+$/;
+
+
+
+
+function chkUserName(){
+var nme = document.getElementById("userName").value;
+if(!check(nme)==true){
+  alert("Enter the username");
+  nme.focus();
+  return false;
+}else{
+  if(!RGLETT.test(nme)){
+    alert("alphabets only allowed");
+    document.getElementById("userName").value = " ";
+    nme.focus;
+    return false;
+  }else{
+    return true;
+  }
+
+}
+
+}
+
+
+function check(inp){
+if(inp== 0 || inp== null || inp==NaN || inp==" "){
+  return false;
+}else{
+  return true;
+}
+}
+
+
+</script>
+
+
+
+  </body>
+</html>

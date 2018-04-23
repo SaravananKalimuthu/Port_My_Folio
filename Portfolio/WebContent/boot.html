@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <style media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: content-box;
+
+    }
+
+    body {
+
+      text-align: center;
+
+    }
+
+    .container {
+
+      width: 80%;
+      height: 200px;
+      margin: auto;
+      margin-top: 10px;
+      background-color: teal;
+      border-radius: 2px;
+
+
+    }
+
+    .container1 {
+
+      width: 80%;
+      height: auto;
+      margin: auto;
+      margin-top: 20px;
+      border-radius: 2px;
+
+
+    }
+
+    .head {
+
+      width: 100%;
+      height: 30px;
+      background-color: orange;
+      border-radius: 2px;
+
+    }
+
+    .nav {
+      display: flex;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      text-decoration: none;
+      color:teal;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      font-size: 8px;
+      color:teal;
+    }
+
+    .nav-link:focus,
+    .nav-link:hover {
+      text-decoration: none;
+    }
+
+    .nav-link.disabled {
+      color: #868e96;
+    }
+
+    .nav-item {
+      text-align: center;
+      text-decoration: none;
+      margin-top: 2px;
+      margin-left: 3px;
+      padding: auto;
+    }
+
+    .active {
+      border-bottom: 2px solid teal;
+      border-radius: 5px;
+    }
+
+h3{
+  margin:auto;
+  margin-top: 20px;
+  color:orange;
+}
+
+.search{
+  width:45%;
+  background-color:transparent;
+  border: 0.5px solid #fff;
+  border-radius:20px;
+  text-align:center;
+  font-size: 5px;
+  padding: 6px;
+  color:orange;
+}
+.button{
+  width:15%;
+  background-color:orange;
+  border: 0.5px solid #fff;
+  border-radius:20px;
+  text-align:center;
+  font-size: 5px;
+  padding: 6px;
+  color:teal;
+}
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="head">
+      <nav>
+        <ul class="nav">
+          <li class="nav-item ">
+            <a href="#" class="nav-link active">one</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">two</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">three</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">four</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+<h3>GOOGLE</h3>
+<div class="container1">
+  <div class="row">
+      <input class="search" type="search" name="search" value="Type Here">
+      <button class="button" type="button" name="button">Search</button>
+  </div>
+</div>
+
+
+
+  </div>
+
+
+</body>
+
+</html>
